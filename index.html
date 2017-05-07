@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/libs/angularjs/1.4.8/angular.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>-->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></scrip-->
+    <!--<script type="text/javascript" src="js/angular.js"></script>-->
+    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+<div >
+    <ng-view></ng-view>
+
+</div>
+<h1>{{"Hello World"}}</h1>
+<!--<input type="number" ng-model="myText" name="inputName"><br/>-->
+
+
+<!--<p>Cell Phone Number</p>-->
+
+<!--<input style="width:40%;" type="text" name="phone" ng-minlen    gth="10" ng-maxlength="15" ng-model="register.phone" placeholder='cell phone' ng-pattern="onlyNumbers" required title="please enter cell phone">-->
+
+
+<div class="container">
+
+    <p>Demo of AngularJS Numbers Only Directive</p>
+
+    <p>Input below will accept only numbers.</p>
+
+    <p><input type="text" ng-model="val" numbers-only class="form-control" /></p>
+
+
+</div>
+
+</body>
+</html>
